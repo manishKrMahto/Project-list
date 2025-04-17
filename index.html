@@ -3,137 +3,174 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>AI Projects Showcase</title>
+  <title>Project List</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      margin: 30px;
-      background-color: #f4f4f4;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f2f6fc;
+      color: #333;
+      margin: 0;
+      padding: 2rem;
     }
+
     h1 {
       text-align: center;
+      color: #2a2a2a;
+      margin-bottom: 2rem;
     }
-    .project {
-      background-color: #fff;
-      border-radius: 10px;
-      padding: 20px;
-      margin-bottom: 20px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+
+    .project-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+      gap: 20px;
     }
-    .project h2 {
-      margin-top: 0;
+
+    .project-card {
+      background-color: white;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+      transition: transform 0.2s, box-shadow 0.2s;
     }
-    .project p {
-      margin: 5px 0;
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
     }
-    .tag {
-      display: inline-block;
-      background-color: #e0e0e0;
-      border-radius: 4px;
-      padding: 2px 8px;
-      margin-right: 5px;
-      font-size: 0.9em;
+
+    .project-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-bottom: 0.3rem;
+      color: #1a1a1a;
     }
+
+    .skills {
+      font-size: 0.95rem;
+      margin-bottom: 0.6rem;
+      color: #555;
+    }
+
+    .use-case {
+      font-size: 0.9rem;
+      margin-bottom: 0.8rem;
+      font-style: italic;
+      color: #666;
+    }
+
     .links a {
-      margin-right: 10px;
+      display: inline-block;
+      margin-right: 8px;
+      margin-bottom: 6px;
+      padding: 6px 10px;
+      font-size: 0.85rem;
       text-decoration: none;
-      color: #0077cc;
+      background-color: #0077ff;
+      color: white;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
+    }
+
+    .links a:hover {
+      background-color: #005ecc;
     }
   </style>
 </head>
 <body>
 
-  <h1>🔥 AI Projects Showcase</h1>
+  <h1>🚀 AI Project Showcase</h1>
+  <div class="project-container">
 
-  <div class="project">
-    <h2>1. MediScan AI – Pneumonia/TB Detection from Chest X-rays</h2>
-    <p><strong>Skills:</strong> CNN, Transfer Learning, Grad-CAM, Medical Imaging</p>
-    <p><strong>Use Case:</strong> Healthcare diagnostics for early detection.</p>
-    <div class="links">
-      <a href="https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia" target="_blank">Dataset</a>
-      <a href="https://arxiv.org/pdf/2007.14895" target="_blank">Paper</a>
-      <a href="https://github.com/msikorski93/Pneumonia-Recognition-With-Deep-Learning-and-TensorFlow" target="_blank">Open Source</a>
+    <div class="project-card">
+      <div class="project-title">MediScan AI – Pneumonia/TB Detection</div>
+      <div class="skills">Skills: CNN, Transfer Learning, Grad-CAM, Medical Imaging</div>
+      <div class="use-case">Use Case: Healthcare diagnostics for early detection</div>
+      <div class="links">
+        <a href="https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia" target="_blank">Dataset</a>
+        <a href="https://arxiv.org/pdf/2007.14895" target="_blank">Paper</a>
+        <a href="https://github.com/msikorski93/Pneumonia-Recognition-With-Deep-Learning-and-TensorFlow" target="_blank">Open Source</a>
+      </div>
     </div>
-  </div>
 
-  <div class="project">
-    <h2>2. StockSeer – Multivariate Stock Price Forecasting with LSTM</h2>
-    <p><strong>Skills:</strong> LSTM, yfinance API, Feature Engineering, Time Series Forecasting</p>
-    <p><strong>Use Case:</strong> Finance sector forecasting and analysis tools.</p>
-    <div class="links">
-      <a href="https://arxiv.org/pdf/2009.10819" target="_blank">Paper</a>
-      <a href="https://github.com/034adarsh/Stock-Price-Prediction-Using-LSTM" target="_blank">Open Source</a>
+    <div class="project-card">
+      <div class="project-title">StockSeer – Multivariate Stock Forecasting</div>
+      <div class="skills">Skills: LSTM, yfinance API, Feature Engineering, Time Series Forecasting</div>
+      <div class="use-case">Use Case: Finance sector forecasting and analysis tools</div>
+      <div class="links">
+        <a href="https://arxiv.org/pdf/2009.10819" target="_blank">Paper</a>
+        <a href="https://github.com/034adarsh/Stock-Price-Prediction-Using-LSTM" target="_blank">Open Source</a>
+      </div>
     </div>
-  </div>
 
-  <div class="project">
-    <h2>4. MentalMate – Detecting Depression from Social Media Posts</h2>
-    <p><strong>Skills:</strong> NLP, Sentiment & Emotion Classification, BERT/RoBERTa</p>
-    <p><strong>Use Case:</strong> Mental health monitoring tools and social listening platforms.</p>
-    <div class="links">
-      <a href="https://github.com/rafalposwiata/depression-detection-lt-edi-2022?utm_source=chatgpt.com" target="_blank">Open Source</a>
-      <a href="https://aclanthology.org/2022.ltedi-1.40.pdf" target="_blank">Paper</a>
+    <div class="project-card">
+      <div class="project-title">MentalMate – Detecting Depression via Social Media</div>
+      <div class="skills">Skills: NLP, Sentiment & Emotion Classification, BERT/RoBERTa</div>
+      <div class="use-case">Use Case: Mental health monitoring tools and social listening platforms</div>
+      <div class="links">
+        <a href="https://aclanthology.org/2022.ltedi-1.40.pdf" target="_blank">Paper</a>
+        <a href="https://github.com/rafalposwiata/depression-detection-lt-edi-2022" target="_blank">Open Source</a>
+      </div>
     </div>
-  </div>
 
-  <div class="project">
-    <h2>5. DisasterMap AI – Satellite Image-Based Real-Time Disaster Response</h2>
-    <p><strong>Skills:</strong> CNN, Remote Sensing, Satellite Imagery, Geospatial AI</p>
-    <p><strong>Use Case:</strong> Government and NGO disaster management.</p>
-    <div class="links">
-      <a href="https://github.com/Hussam1/Hurrican_damage_detector_using_ResNet50?tab=readme-ov-file" target="_blank">Open Source</a>
-      <a href="https://arxiv.org/pdf/1807.01688" target="_blank">Paper</a>
+    <div class="project-card">
+      <div class="project-title">DisasterMap AI – Satellite Image-Based Disaster Response</div>
+      <div class="skills">Skills: CNN, Remote Sensing, Satellite Imagery, Geospatial AI</div>
+      <div class="use-case">Use Case: Government and NGO disaster management</div>
+      <div class="links">
+        <a href="https://arxiv.org/pdf/1807.01688" target="_blank">Paper</a>
+        <a href="https://github.com/Hussam1/Hurrican_damage_detector_using_ResNet50" target="_blank">Open Source</a>
+      </div>
     </div>
-  </div>
 
-  <div class="project">
-    <h2>6. ShopSense – Customer Review Sentiment Analyzer for E-Commerce</h2>
-    <p><strong>Skills:</strong> LSTM/BERT, Text Classification, NLP Pipelines</p>
-    <p><strong>Use Case:</strong> Product feedback analysis for online businesses.</p>
-    <div class="links">
-      <a href="https://github.com/heathbrew/E-commerce-Sentiment-Analysis" target="_blank">Open Source</a>
-      <a href="https://arxiv.org/pdf/2311.10782" target="_blank">Paper</a>
+    <div class="project-card">
+      <div class="project-title">ShopSense – Customer Review Sentiment Analyzer</div>
+      <div class="skills">Skills: LSTM/BERT, Text Classification, NLP Pipelines</div>
+      <div class="use-case">Use Case: Product feedback analysis for online businesses</div>
+      <div class="links">
+        <a href="https://arxiv.org/pdf/2311.10782" target="_blank">Paper</a>
+        <a href="https://github.com/heathbrew/E-commerce-Sentiment-Analysis" target="_blank">Open Source</a>
+      </div>
     </div>
-  </div>
 
-  <div class="project">
-    <h2>7. SmartFarm – AI Crop Disease Detection via Mobile Camera</h2>
-    <p><strong>Skills:</strong> CNN, Mobile Deployment, Image Classification</p>
-    <p><strong>Use Case:</strong> Helps farmers detect plant diseases in real-time.</p>
-    <div class="links">
-      <a href="https://arxiv.org/pdf/2408.15289" target="_blank">Paper</a>
-      <a href="https://github.com/Somnathai/Plant-disease-Detection?utm_source=chatgpt.com" target="_blank">Open Source</a>
+    <div class="project-card">
+      <div class="project-title">SmartFarm – AI Crop Disease Detection</div>
+      <div class="skills">Skills: CNN, Mobile Deployment, Image Classification</div>
+      <div class="use-case">Use Case: Helps farmers detect plant diseases in real-time</div>
+      <div class="links">
+        <a href="https://arxiv.org/pdf/2408.15289" target="_blank">Paper</a>
+        <a href="https://github.com/Somnathai/Plant-disease-Detection" target="_blank">Open Source</a>
+      </div>
     </div>
-  </div>
 
-  <div class="project">
-    <h2>8. VisionScribe AI – Automatic Image Caption Generator</h2>
-    <p><strong>Skills:</strong> Computer Vision, NLP, CNN, RNN, LSTM, Image Captioning</p>
-    <p><strong>Use Case:</strong> Automatically generates human-like captions for images, useful for accessibility, social media, e-commerce, and digital asset management.</p>
-    <div class="links">
-      <a href="https://www.kaggle.com/datasets/nikhil7280/coco-image-caption" target="_blank">Dataset</a>
-      <a href="https://arxiv.org/pdf/1502.03044" target="_blank">Open Source</a>
+    <div class="project-card">
+      <div class="project-title">VisionScribe AI – Automatic Image Captioning</div>
+      <div class="skills">Skills: CV + NLP, CNN, RNN, LSTM, Image Captioning</div>
+      <div class="use-case">Use Case: Caption generation for accessibility and digital media</div>
+      <div class="links">
+        <a href="https://www.kaggle.com/datasets/nikhil7280/coco-image-caption" target="_blank">Dataset</a>
+        <a href="https://arxiv.org/pdf/1502.03044" target="_blank">Paper</a>
+      </div>
     </div>
-  </div>
 
-  <div class="project">
-    <h2>9. FreightOpt AI – Truck Route and Load Optimization</h2>
-    <p><strong>Skills:</strong> Deep Learning + Optimization, Route Prediction</p>
-    <p><strong>Use Case:</strong> Logistics companies optimizing fuel, load, and efficiency.</p>
-    <div class="links">
-      <a href="https://nextbillion.ai/truck-route-planning-guide" target="_blank">Reference Blog</a>
+    <div class="project-card">
+      <div class="project-title">FreightOpt AI – Truck Route Optimization</div>
+      <div class="skills">Skills: Deep Learning + Optimization, Route Prediction</div>
+      <div class="use-case">Use Case: Optimize logistics, fuel, and route planning</div>
+      <div class="links">
+        <a href="https://nextbillion.ai/truck-route-planning-guide" target="_blank">Reference Blog</a>
+      </div>
     </div>
-  </div>
 
-  <div class="project">
-    <h2>10. LearnMate AI – Personalized Learning Assistant</h2>
-    <p><strong>Skills:</strong> Sequence Modeling, Recommendation Systems, Attention Mechanisms</p>
-    <p><strong>Use Case:</strong> EdTech tools that tailor learning to individual students.</p>
-    <div class="links">
-      <a href="https://arxiv.org/pdf/1506.05908" target="_blank">Paper</a>
-      <a href="https://github.com/lccasagrande/Deep-Knowledge-Tracing" target="_blank">Open Source</a>
+    <div class="project-card">
+      <div class="project-title">LearnMate AI – Personalized Learning Assistant</div>
+      <div class="skills">Skills: Sequence Modeling, Recommendation Systems, Attention</div>
+      <div class="use-case">Use Case: Tailored learning for EdTech applications</div>
+      <div class="links">
+        <a href="https://arxiv.org/pdf/1506.05908" target="_blank">Paper</a>
+        <a href="https://github.com/lccasagrande/Deep-Knowledge-Tracing" target="_blank">Open Source</a>
+      </div>
     </div>
-  </div>
 
+  </div>
 </body>
 </html>
